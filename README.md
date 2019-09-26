@@ -1,3 +1,31 @@
+# Ping Pong Pairs Generator
+This project is the technical exercise for the coding fellowship with DevelopMe.
+I will demonstrating my technical abilities in written code. It is also an opportunity to demonstrate my technical thinking and communication skills.
+
+## The brief
+
+The exercise is to create a tool which randomly creates pairings for a table tennis tournament bracket from a list of names collected from the user.
+
+It is up to me how I implement this, with JavaScript, React, or PHP, as a web page, or as an app.
+
+**Optional** advanced features might include:
+
+- ability to record scores for each player, or mark which player won from each pairing, to create the next round of the tournament playoffs
+- continued rounds created until the final (last 2 players who have won all matches to date play each other, one marked as the winner)
+
+**Some suggestions**
+
+As employers will be looking at my code, I need demonstrate clear thinking, good quality code and use of comments.
+
+I should document what you have done and why, to demonstrate your thinking.
+
+**How to get my app running**
+
+If my tool requires a particular environment to run (e.g. Node or PHP) then this should be documented with instructions provided (e.g. a Vagrantfile, package.json, gulpfile.js etc.). In short: an employer shouldn't struggle to get it working on their local machine, and you shouldn't assume they know how it is supposed to work.
+
+**GIT - version managing**
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
