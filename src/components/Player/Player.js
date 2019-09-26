@@ -7,14 +7,21 @@ class Player extends Component {
         this.state = {
             newName: "",
         };
-        //bind the handle change method
+        //bind the handlechange and handleDelete  method
         this.handleChange = this.handleChange.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     };
-    //handlechange function allows input to change
+
+    //handlechange function allows input to change the state
     handleChange(e) {
         this.setState({ newName: e.currentTarget.value });
     };
 
+    handleDelete(index) {
+        // this prop comes from the wrapper of player, it dispatchs the action.
+        //index is used so the reducer knows which name it should delete from the players array in global state
+        this.props.delete(index);
+    };
 
     render() {
         //destructure state and props
@@ -26,9 +33,10 @@ class Player extends Component {
             <>   
                 <li className="list-group-item">
                     <span>{ players[index].name }</span>
+                    <span onClick={ () => this.handleDelete(index) } className="btn">Delete</span>
                 </li> 
-                    <form onSubmit={ enteredName } className="form">
-                    </form>
+                <form onSubmit={ enteredName } className="form">
+                </form>
             </>
         );
     };
