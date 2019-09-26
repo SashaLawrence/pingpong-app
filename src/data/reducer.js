@@ -1,3 +1,6 @@
+import { shuffle } from "./functions/shuffle";
+import { divide } from "./functions/divide";
+
 const newPlayer = (state, { name }) => {
     return {
         ...state,
@@ -23,11 +26,25 @@ const deletePlayer = (state, { index }) => {
     };
 };
 
+const newMatch = state => {
+    let newPlayers = [...state.players];
+    
+    return {
+        ...state,
+        matches: [
+            ...divide(shuffle(newPlayers))
+        ],
+        players: state.players,
+    };
+};
+
+
 // reducer gets given current state version of the state and the action that called it
 const reducer = (state, action) => {    
     switch (action.type) {
         case "newPlayer": return newPlayer(state, action);
         case "deletePlayer": return deletePlayer(state, action);
+        case "newMatch": return newMatch(state, action);
         default: return state;
     }
 }

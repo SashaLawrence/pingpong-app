@@ -13,3 +13,10 @@ export const deletePlayer = (values, index) => {
         index
     };
 };
+
+export const newMatch = values => {
+    return {
+        type: "newMatch",
+        ...values,
+    };
+};

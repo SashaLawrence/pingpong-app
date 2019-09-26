@@ -7,9 +7,12 @@ class Forms extends Component {
         super(props);
         this.state = {
             name: "",
+            errorMatch: false,
         };
         this.handleChangeName = this.handleChangeName.bind(this);
         this.handleSubmitName = this.handleSubmitName.bind(this);
+        this.handleErrorMatch = this.handleErrorMatch.bind(this);
+        this.handleSubmitMatch = this.handleSubmitMatch.bind(this);
     };
 
     handleChangeName(e) {
@@ -22,9 +25,26 @@ class Forms extends Component {
         this.props.handleName(this.state)
     };
 
+    handleErrorMatch(e) {
+        e.preventDefault();
+        this.setState({ errorMatch: true });
+    };
+
+    handleSubmitMatch(e) {
+        e.preventDefault();
+        this.props.handleMatch(this.state);
+        this.setState({ errorMatch: false });
+    };
+    
     render() {
-        let { name } = this.state;
+        let { name, errorMatch} = this.state;
         let { players } = this.props;
+        
+        const isEven = i => {
+            {
+            return (i % 2 === 0);
+            };
+        };
 
         return (
             <>
@@ -39,6 +59,10 @@ class Forms extends Component {
                     ))
                 }
                 </ul>
+                <form onSubmit={ isEven(players.length) ? this.handleSubmitMatch : this.handleErrorMatch } className="form">
+                    <button className="btn">Create Matches</button>
+                    { !errorMatch ? null : <p>Enter an even number of players</p> }
+                </form>
             </>
         );
     }

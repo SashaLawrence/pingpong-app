@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from './../Header/Header';
 // import './App.css';
-import Forms from './../Forms'
+import Forms from '../Forms'
+import Match from "../Match";
 
-function App() {
-  return (
-    <>
+const App = () => (
+  <>
     <Header/>
     <Forms/>
-    </>
-  );
-}
+    <Match/>
+  </>
+);
 
 export default App;
