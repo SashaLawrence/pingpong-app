@@ -1,20 +1,22 @@
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 700
-
 }
 
-h1, li, p, button{
+h1, li, p, button, label, th{
   font-family: 'Francois One', sans-serif;
+  font-size: 1rem
+}
+h2, small {
+  font-family: 'Rouge Script', cursive;  
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #4F4F4F
 }
 
-h2{
-font-family: 'Rouge Script', cursive;  
-font-weight: "700",
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+

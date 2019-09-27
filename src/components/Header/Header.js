@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg"
-import pingpong from "./ping-pong-circle-log.png"
+import pingpong from "./ping-pong-circle-log2.png"
 
 const h1Header = {
   color: "#f8f9fa",
@@ -10,7 +10,7 @@ const h2Header = {
   color: "#241F20",
   fontWeight: "700",
   fontSize: "1.1rem",
-  left: "20px",
+  paddingLeft: "10px"
 }
 //to make heading on two lines
 const headingWrap = {
@@ -26,7 +26,7 @@ const forward = {
 	zIndex: "10",
 	position: "relative",
 	textAlign: "left",
-	paddingLeft: "20px",
+	paddingLeft: "12px",
 	top: "20px"
 }
 const Header = () => (

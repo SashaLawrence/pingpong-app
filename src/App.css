@@ -1,7 +1,7 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	background: #60a3bc !important;
+	background:#60a3bc  !important;
 	min-height: 100%;
 	text-align: center;
     }
@@ -16,19 +16,21 @@ body, html {
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
-	bottom: 50px
+	bottom: 50px;
+	height: 15vh
 }
 .brand_logo_container {
 	position: relative;
-	height: 170px;
+	height: 160px;
 	width: 170px;
 	border-radius: 40%;
-	background: #60a3bc;
+	background:#60a3bc ;
 	padding: 10px;
 	text-align: center;
+	bottom: 80px
 }
 .brand_logo {
-	height: 150px;
+	height: 140px;
 	width: 150px;
 	border-radius: 40%;
 	border: 2px solid white;
