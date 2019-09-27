@@ -3,7 +3,7 @@ import logo from "./logo.svg"
 import pingpong from "./ping-pong-circle-log2.png"
 
 const h1Header = {
-  color: "#f8f9fa",
+  color: "#EFF0F0",
   fontSize: "2rem"
 }
 const h2Header = {
@@ -14,7 +14,8 @@ const h2Header = {
 }
 //to make heading on two lines
 const headingWrap = {
-  display: "block"
+  display: "block",
+  color: "#20615b"
 }
 // z index container - set to auto to send it back
 const back = {
@@ -27,7 +28,7 @@ const forward = {
 	position: "relative",
 	textAlign: "left",
 	paddingLeft: "12px",
-	top: "20px"
+	top: "50px"
 }
 const Header = () => (
 	<>
