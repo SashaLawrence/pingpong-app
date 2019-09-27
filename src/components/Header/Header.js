@@ -1,44 +1,56 @@
 import React from "react";
 import logo from "./logo.svg"
+import pingpong from "./ping-pong-circle-log.png"
 
-const imageSize = {
-  width: "30%", 
-  height: "auto",
-  color: "white"
+const h1Header = {
+  color: "#f8f9fa",
+  fontSize: "2rem"
 }
-const container = {
-  position:"relative",
-  textAlign:"center"
-}
-
-const h1Position = {
-  position:"absolute",
-  top: "30%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  color: "#FBF0CE",
-  fontSize: "50px", /* Some font size to fallback incase vw isn't supported */ 
-  fontSize: "5vw"
-}
-const h2Position = {
-  position:"absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
+const h2Header = {
   color: "#241F20",
-  fontSize: "50px", /* Some font size to fallback incase vw isn't supported */ 
-  fontSize: "4vw",
   fontWeight: "700",
+  fontSize: "1.1rem",
+  left: "20px",
 }
-const span = {
+//to make heading on two lines
+const headingWrap = {
   display: "block"
 }
+// z index container - set to auto to send it back
+const back = {
+	zIndex: "auto",
+	position: "relative"
+}
+// z index container - set to 10 to send it forward
+const forward = {
+	zIndex: "10",
+	position: "relative",
+	textAlign: "left",
+	paddingLeft: "20px",
+	top: "20px"
+}
 const Header = () => (
-    <div style={container}>
-    <img src={ logo } alt="ping pong logo" style={ imageSize } />
-    <h1 style={h1Position}> PING <span style={span}>PONG</span></h1>
-    <h2 style={h2Position}>tournament</h2>
-    </div>
+	<>
+		<div style={forward}>
+			<h1 style={h1Header}>PING<span style={headingWrap}>PONG</span></h1>
+			<h2 style={h2Header}>tournament<span style={headingWrap}>generator</span></h2>
+		</div>
+		
+		{/* wrapped for the whole container */}
+		<div style = {back} >
+			<div className="d-flex justify-content-center">
+				<div className="user_card">
+					{/* the logo  */}
+					<div className="brand_logo_container">
+						<img src={pingpong} className="brand_logo" alt="Logo"></img>
+					</div>
+				</div>
+					{/* the background */}
+					<div className="form_container">
+					</div>
+			</div>
+		</div>
+	</>
 );
 
 export default Header;

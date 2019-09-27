@@ -5,12 +5,13 @@ body {
 
 }
 
-h1 {
+h1, li, p, button{
   font-family: 'Francois One', sans-serif;
-
 }
-h2 {
+
+h2{
 font-family: 'Rouge Script', cursive;  
+font-weight: "700",
 }
 
 code {
