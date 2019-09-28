@@ -12,8 +12,9 @@ It is up to me how I implement this, with JavaScript, React, or PHP, as a web pa
 
 ## Getting Started
 
-view the live app here: [View my app ](github.com)
+view the live app here: [View my app ](https://sashalawrence.github.io/pingpong-app/)
 
+<br>
 
 *Alternatively:*
 
@@ -72,13 +73,13 @@ Once you have both of these installed on your system, continue on to the next st
 8.  open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Skills Used
-React, Redux, JSX, JavaScript, HTML, CSS (CSS-in-JS), Git Version Management / Branches, Wireframes.
+React, Redux, JSX, JavaScript, HTML, CSS (CSS-in-JS), Bootstrap 4, Git Version Management / Branches, Wireframes, Illustrator, Photoshop, Google Fonts.
 
-I decided to use React and Redux for this challenge as it implements a lot of what I have learnt over the past 12 weeks and I needed more practise building a React app.
+I decided to use React and Redux for this challenge as it implements a lot of what I have learnt over the past 12 weeks, I needed more practise building a React app.
 
 
 ## Wireframes:
-I used **MockFlow** to create initial wireframes for the design of my app, I started with the **mobile first** and then designed the desktop version. 
+I used [MockFlow](https://mockflow.com//)to create initial wireframes for the design of my app, I started with the **mobile first** and then designed the desktop version. 
 
 ### Mobile wireframe:
 ![ping-pong-wireframes-mobile](https://user-images.githubusercontent.com/51890290/65816537-d7c82a00-e1f4-11e9-861a-6f0dd0c8e4d5.png)
@@ -133,7 +134,7 @@ I broke down my app into 3 parts to get each stage working:
 
 **Match Table**
 * on clicking the "create tournament" checks the names are even and runs the newMatch reducer 
-* newMatch uses the players name array with the Random and Divide Functions 
+* newMatch uses the players name array with the shuffle and divide Functions 
 * outputs the pairs as a table
 
 ## Mobile Screenshot
@@ -142,8 +143,11 @@ I broke down my app into 3 parts to get each stage working:
 ## Desktop Screenshot
 
 ![Screenshot 2019-09-28 at 14 31 57](https://user-images.githubusercontent.com/51890290/65817241-c420c180-e1fc-11e9-95a5-0626bff30dab.png)
+
 ## Colour Palette
 ![palette](https://user-images.githubusercontent.com/51890290/65817316-8b351c80-e1fd-11e9-8e87-748842ddcbb4.png)
+
+Here is the colour palette I created for my website using [Coolors](https://coolors.co/20615b-dece9c-4f4f4f-383d41-dc3545/), the logo in my website is licenced from [Adobe Stock Images](https://stock.adobe.com/uk/images/vector-set-of-ping-pong-logos-emblems-and-design-elements/135296103/) - I tweaked the design and added colour to it using Illustator.
 
 ## Future work
 
