@@ -9,16 +9,6 @@ The exercise is to create a tool which randomly creates pairings for a table ten
 
 It is up to me how I implement this, with JavaScript, React, or PHP, as a web page, or as an app.
 
-**Optional** advanced features might include:
-
-- ability to record scores for each player, or mark which player won from each pairing, to create the next round of the tournament playoffs
-- continued rounds created until the final (last 2 players who have won all matches to date play each other, one marked as the winner)
-
-**Some suggestions**
-
-As employers will be looking at my code, I need demonstrate clear thinking, good quality code and use of comments.
-
-I should document what you have done and why, to demonstrate your thinking.
 
 ## Getting Started
 
