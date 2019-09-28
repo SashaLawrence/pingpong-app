@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pingpong-app/static/css/main.d856f3b6.chunk.css",
+    "main.js": "/pingpong-app/static/js/main.d994cdb6.chunk.js",
+    "main.js.map": "/pingpong-app/static/js/main.d994cdb6.chunk.js.map",
+    "runtime-main.js": "/pingpong-app/static/js/runtime-main.40b007d3.js",
+    "runtime-main.js.map": "/pingpong-app/static/js/runtime-main.40b007d3.js.map",
+    "static/js/2.83096f9d.chunk.js": "/pingpong-app/static/js/2.83096f9d.chunk.js",
+    "static/js/2.83096f9d.chunk.js.map": "/pingpong-app/static/js/2.83096f9d.chunk.js.map",
+    "index.html": "/pingpong-app/index.html",
+    "precache-manifest.0abcc91b81df0deea44c51d358edda28.js": "/pingpong-app/precache-manifest.0abcc91b81df0deea44c51d358edda28.js",
+    "service-worker.js": "/pingpong-app/service-worker.js",
+    "static/css/main.d856f3b6.chunk.css.map": "/pingpong-app/static/css/main.d856f3b6.chunk.css.map",
+    "static/media/logo.png": "/pingpong-app/static/media/logo.cb9686b2.png"
+  }
+}
