@@ -1,14 +1,15 @@
 # Ping Pong Pairs Generator
-This project is the technical exercise for the coding fellowship with DevelopMe.
-I will demonstrating my technical abilities in written code. It is also an opportunity to demonstrate my technical thinking and communication skills.
+This project is the technical exercise for the end of the **Coding Fellowship** with **DevelopMe Summer 2019.**
+
+I will demonstrating my technical abilities in **written code**. It is also an opportunity to demonstrate my **technical thinking** and **communication skills.**
 
 ## The brief
 
-The exercise is to create a tool which randomly creates pairings for a table tennis tournament bracket from a list of names collected from the user.
+The exercise is to create a tool which randomly creates pairings for a table tennis tournament bracket from a list of names collected from the user.
 
 It is up to me how I implement this, with JavaScript, React, or PHP, as a web page, or as an app.
 
-**Optional** advanced features might include:
+**Optional** advanced features might include:
 
 - ability to record scores for each player, or mark which player won from each pairing, to create the next round of the tournament playoffs
 - continued rounds created until the final (last 2 players who have won all matches to date play each other, one marked as the winner)
@@ -19,78 +20,144 @@ As employers will be looking at my code, I need demonstrate clear thinking, good
 
 I should document what you have done and why, to demonstrate your thinking.
 
-**How to get my app running**
+## Getting Started
 
-If my tool requires a particular environment to run (e.g. Node or PHP) then this should be documented with instructions provided (e.g. a Vagrantfile, package.json, gulpfile.js etc.). In short: an employer shouldn't struggle to get it working on their local machine, and you shouldn't assume they know how it is supposed to work.
-
-**GIT - version managing**
+view the live app here: [View my app ](github.com)
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+*Alternatively:*
 
-## Available Scripts
+To get started, please clone the repository and install the prerequisites listed below.
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+Node Package Manager
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The latest version of npm can be downloaded here - 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+https://www.npmjs.com/get-npm
 
-### `npm test`
+You will also need a web browser to view the project. e.g. Google Chrome -
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://www.google.com/chrome/index.html
 
-### `npm run build`
+Once you have both of these installed on your system, continue on to the next step.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone the repro from Github
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+1.  Under my repository name, click  **Clone or download**.
+    
+    ![Clone or download button](https://help.github.com/assets/images/help/repository/clone-repo-clone-url-button.png)
+    
+2.  clone the repository using SSH,  **Use SSH** and copy the URL
+   ![Clone URL button](https://help.github.com/assets/images/help/repository/https-url-clone.png)
+    
+3.  Open  **Terminal.**
+    
+4.  Change the current working directory to the location where you want the cloned directory to be made.
+    
+5.  Type  `git clone`, and then paste the URL you copied in Step 2.
+    
+    ```shell
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    ```
+    
+6.  Press  **Enter**. Your local clone will be created.
+    
+    ```shell
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    > Cloning into `Spoon-Knife`...
+    > remote: Counting objects: 10, done.
+    > remote: Compressing objects: 100% (8/8), done.
+    > remove: Total 10 (delta 1), reused 10 (delta 1)
+    > Unpacking objects: 100% (10/10), done.
+    ```
+7.  Locate the cloned git repository folder in your terminal and run npm
+    
+    ```shell
+    $ cd (the newly cloned folder on your computer)
+    $ npm install
+    $ npm start
+    ```
+8.  open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Skills Used
+React, Redux, JSX, JavaScript, HTML, CSS (CSS-in-JS), Git Version Management / Branches, Wireframes.
 
-### `npm run eject`
+I decided to use React and Redux for this challenge as it implements a lot of what I have learnt over the past 12 weeks and I needed more practise building a React app.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wireframes:
+I used **MockFlow** to create initial wireframes for the design of my app, I started with the **mobile first** and then designed the desktop version. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Mobile wireframe:
+![ping-pong-wireframes-mobile](https://user-images.githubusercontent.com/51890290/65816537-d7c82a00-e1f4-11e9-861a-6f0dd0c8e4d5.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Desktop wireframe:
+![ping-pong-wireframes-desktop](https://user-images.githubusercontent.com/51890290/65816553-fcbc9d00-e1f4-11e9-9cda-e9ec81df18b0.png)
 
-## Learn More
+## Component Structure
+After the wireframes I set about working out the structure of Components in my app:
+```bash
+├── ...
+├── Components
+│   ├── App                    # container for my components
+│
+│   ├── Header                 # stateless Header component with logo/header
+│
+│   ├── Forms                  # user input of players name
+│   ├── Player                 # players name outputed as a Player list
+│
+│   ├── Match                 
+│   ├── Pairs
+│   ├── Pair
+│   ├── Name                   # outputs as a table with name vs name
+└── 
+```
+State Management
+I installed **Redux** and **React-Redux** and used these to keep track of our state. 
+* set up **initial state**
+* created the **reducer**
+* created a **store** (which passes it my reducer and the initial state)
+* subscribed to the store and dispatched actions to store using event handlers.
+```bash
+├── ...
+├── Data              
+│   ├── actions            
+│       ├── state           # newPlayer, deletePlayer and newMatch actions 
+│   ├── functions
+│       ├── divide          # divides players in pairs
+│       ├── shuffle         # shuffle function
+│   ├── initial             # set up inital state of players and matches arrays
+│   ├── reducer             # newPlayer, deletePlayer and NewMatch reducers
+│   └── store               # created store - passed in intial and reducer
+└── ...
+```
+I broke down my app into 3 parts to get each stage working:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**User input**
+* input of players name in the Forms component when the Add button is click and it stores the name in state
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Players List**
+* Players components outputs the newPlayer as a list  - added a deletePlayer function
 
-### Code Splitting
+**Match Table**
+* on clicking the "create tournament" checks the names are even and runs the newMatch reducer 
+* newMatch uses the players name array with the Random and Divide Functions 
+* outputs the pairs as a table
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Mobile Screenshot
+![Screenshot 2019-09-28 at 14 25 41](https://user-images.githubusercontent.com/51890290/65817202-596f8600-e1fc-11e9-9b60-59e18428d86a.png)
 
-### Analyzing the Bundle Size
+## Desktop Screenshot
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+![Screenshot 2019-09-28 at 14 31 57](https://user-images.githubusercontent.com/51890290/65817241-c420c180-e1fc-11e9-95a5-0626bff30dab.png)
+## Colour Palette
+![palette](https://user-images.githubusercontent.com/51890290/65817316-8b351c80-e1fd-11e9-8e87-748842ddcbb4.png)
 
-### Making a Progressive Web App
+## Future work
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Form validation** -  at the moment you can enter anything as a name even an empty space
+* **SASS and gulp** - I used CSS-in-JS but would of liked to implement SASS and GULP to neaten up my CSS
+* I used bootstrap for quicker styling - would be nice to create a custom CSS in the future
+*  **Stretch Goals** - be able to **edit the name** and **add scores** so you can generate a tournament bracket structure
