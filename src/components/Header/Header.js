@@ -1,21 +1,26 @@
 import React from "react";
-import logo from "./logo.svg"
-import pingpong from "./ping-pong-circle-log2.png"
+import logo from "./logo.png"
 
 const h1Header = {
   color: "#EFF0F0",
   fontSize: "2rem"
 }
 const h2Header = {
-  color: "#241F20",
+  color: "#3d3b3b",
   fontWeight: "700",
   fontSize: "1.1rem",
   paddingLeft: "10px"
 }
 //to make heading on two lines
-const headingWrap = {
+const h1HeadingWrap = {
+	display: "block",
+	color: "#20615b"
+  }
+//to make heading on two lines
+const h2HeadingWrap = {
   display: "block",
-  color: "#20615b"
+  color: "#20615b",
+  paddingLeft: "30px"
 }
 // z index container - set to auto to send it back
 const back = {
@@ -33,8 +38,8 @@ const forward = {
 const Header = () => (
 	<>
 		<div style={forward}>
-			<h1 style={h1Header}>PING<span style={headingWrap}>PONG</span></h1>
-			<h2 style={h2Header}>tournament<span style={headingWrap}>generator</span></h2>
+			<h1 style={h1Header}>PING<span style={h1HeadingWrap}>PONG</span></h1>
+			<h2 style={h2Header}>tournament<span style={h2HeadingWrap}>generator</span></h2>
 		</div>
 		
 		{/* wrapped for the whole container */}
@@ -43,7 +48,7 @@ const Header = () => (
 				<div className="user_card">
 					{/* the logo  */}
 					<div className="brand_logo_container">
-						<img src={pingpong} className="brand_logo" alt="Logo"></img>
+						<img src={logo} className="brand_logo" alt="Logo"></img>
 					</div>
 				</div>
 					{/* the background */}

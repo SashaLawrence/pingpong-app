@@ -52,7 +52,7 @@ class Forms extends Component {
                 <form onSubmit={ this.handleSubmitName } >
                     <label htmlFor="names" className="help-block">ENTER PLAYERS<small className="pl-2">add names and create your pairings</small></label>
                     <input onChange={ this.handleChangeName } id="names" className= "form-control" value={ name } />
-                    <button type="submit" className="btn btn-outline-success mt-3 mb-3">Add</button>
+                    <button type="submit" className="btn btn-outline-light mt-3 mb-3">Add</button>
                 </form>
                  <ul className="list-group">{
                     players.map((player, i) => (
@@ -61,8 +61,8 @@ class Forms extends Component {
                 }
                 </ul>
                 <form onSubmit={ isEven(players.length) ? this.handleSubmitMatch : this.handleErrorMatch } className="form">
-                    <button type="submit" className="btn btn-outline-success mt-3 mb-3">Create Tournament</button>
-                    { !errorMatch ? null : <div class="alert alert-info" role="alert">Enter an even number of players!</div> }
+                    <button type="submit" className="btn btn-outline-light mt-3 mb-3">Create Tournament</button>
+                    { !errorMatch ? null : <div class="alert alert-danger" role="alert">Enter an even number of players!</div> }
                 </form>
             </>
         );

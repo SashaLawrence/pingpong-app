@@ -31,7 +31,7 @@ class Player extends Component {
         return (
             //using the value of the state and props outputted as a list
             <>   
-                <li className="list-group-item list-group-item-action list-group-item-light">
+                <li className="list-group-item list-group-item-action list-group-item-secondary">
                     <span className="float-left">{ players[index].name }</span>
                     <span onClick={ () => this.handleDelete(index) } className="btn btn-outline-danger btn-sm float-right">Delete</span>
                 </li> 
