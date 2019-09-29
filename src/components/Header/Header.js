@@ -3,12 +3,10 @@ import logo from "./logo.png"
 
 const h1Header = {
   color: "#EFF0F0",
-  fontSize: "2rem"
 }
 const h2Header = {
   color: "#3d3b3b",
   fontWeight: "700",
-  fontSize: "1.1rem",
   paddingLeft: "10px"
 }
 //to make heading on two lines
@@ -20,7 +18,6 @@ const h1HeadingWrap = {
 const h2HeadingWrap = {
   display: "block",
   color: "#20615b",
-  paddingLeft: "30px"
 }
 // z index container - set to auto to send it back
 const back = {
@@ -33,13 +30,13 @@ const forward = {
 	position: "relative",
 	textAlign: "left",
 	paddingLeft: "12px",
-	top: "50px"
+	top: "30px"
 }
 const Header = () => (
 	<>
 		<div style={forward}>
 			<h1 style={h1Header}>PING<span style={h1HeadingWrap}>PONG</span></h1>
-			<h2 style={h2Header}>tournament<span style={h2HeadingWrap}>generator</span></h2>
+			<h2 style={h2Header}>pairs<span style={h2HeadingWrap}>generator</span></h2>
 		</div>
 		
 		{/* wrapped for the whole container */}

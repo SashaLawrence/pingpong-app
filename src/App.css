@@ -1,7 +1,6 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	/* background:#60a3bc  !important; */
 	background:#20615b  !important;
 	min-height: 100%;
 	text-align: center;
@@ -9,7 +8,6 @@ body, html {
 			
 .user_card {
 	width: 90vw;
-	/* background: #ffc107; */
 	background: #dece9c;
 	position: relative;
 	display: flex;
@@ -19,14 +17,13 @@ body, html {
 	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 5px;
 	bottom: 50px;
-	height: 15vh
+	height: 100px
 }
 .brand_logo_container {
 	position: relative;
 	height: 160px;
 	width: 170px;
 	border-radius: 40%;
-	/* background:#60a3bc ; */
 	background:#20615b;
 	padding: 10px;
 	text-align: center;
@@ -39,3 +36,6 @@ body, html {
 	border: 2px solid white;
 }
 
+.container {
+	padding-top: 30px;
+}
