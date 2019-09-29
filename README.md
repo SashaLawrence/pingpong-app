@@ -1,3 +1,4 @@
+
 # Ping Pong Pairs Generator
 This project is the technical exercise for the end of the **Coding Fellowship** with **DevelopMe Summer 2019.**
 
@@ -138,11 +139,16 @@ I broke down my app into 3 parts to get each stage working:
 * outputs the pairs as a table
 
 ## Mobile Screenshot
-![Screenshot 2019-09-28 at 14 25 41](https://user-images.githubusercontent.com/51890290/65817202-596f8600-e1fc-11e9-9b60-59e18428d86a.png)
+Added custom media queries for responsive designs on different viewing formats:
+
+![Screenshot 2019-09-29 at 18 11 00](https://user-images.githubusercontent.com/51890290/65835981-f6a5e980-e2e4-11e9-9e76-58c3f742591c.png)
+
+## Smaller Screen Mobile Screenshot
+![Screenshot 2019-09-29 at 18 11 18](https://user-images.githubusercontent.com/51890290/65835991-0f160400-e2e5-11e9-98a3-e147d77199dc.png)
 
 ## Desktop Screenshot
+![Screenshot 2019-09-29 at 18 10 03](https://user-images.githubusercontent.com/51890290/65835994-20f7a700-e2e5-11e9-9eaf-98d1516da607.png)
 
-![Screenshot 2019-09-28 at 14 31 57](https://user-images.githubusercontent.com/51890290/65817241-c420c180-e1fc-11e9-95a5-0626bff30dab.png)
 
 ## Colour Palette
 ![palette](https://user-images.githubusercontent.com/51890290/65817316-8b351c80-e1fd-11e9-8e87-748842ddcbb4.png)
