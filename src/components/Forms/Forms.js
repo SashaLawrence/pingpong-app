@@ -62,7 +62,7 @@ class Forms extends Component {
                 </ul>
                 <form onSubmit={ isEven(players.length) ? this.handleSubmitMatch : this.handleErrorMatch } className="form">
                     <button type="submit" className="btn btn-outline-light mt-3 mb-3">Create Tournament</button>
-                    { !errorMatch ? null : <div class="alert alert-danger" role="alert">Enter an even number of players!</div> }
+                    { !errorMatch ? null : <div className="alert alert-danger" role="alert">Enter an even number of players!</div> }
                 </form>
             </>
         );

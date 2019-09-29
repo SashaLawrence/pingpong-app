@@ -19,11 +19,6 @@ const h2HeadingWrap = {
   display: "block",
   color: "#EFF0F0",
 }
-// z index container - set to auto to send it back
-const back = {
-	zIndex: "auto",
-	position: "relative"
-}
 // z index container - set to 10 to send it forward
 const forward = {
 	zIndex: "10",
@@ -38,16 +33,12 @@ const Header = () => (
 			<h1 style={h1Header}>PING<span style={h1HeadingWrap}>PONG</span></h1>
 			<h2 style={h2Header}>pairs<span style={h2HeadingWrap}>generator</span></h2>
 		</div>
-		
-		{/* wrapped for the whole container */}
-		<div style = {back} >
-			<div className="d-flex justify-content-center" style={{height: "4vh"}}>
+		<div className="d-flex justify-content-center" style={{height: '50px'}}>
 				<div className="user_card">
 					{/* the logo  */}
 					<div className="brand_logo_container">
 						<img src={logo} className="brand_logo" alt="Logo"></img>
 					</div>
-				</div>
 			</div>
 		</div>
 	</>
