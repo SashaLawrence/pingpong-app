@@ -17,7 +17,7 @@ const h1HeadingWrap = {
 //to make heading on two lines
 const h2HeadingWrap = {
   display: "block",
-  color: "#20615b",
+  color: "#EFF0F0",
 }
 // z index container - set to auto to send it back
 const back = {
@@ -34,23 +34,20 @@ const forward = {
 }
 const Header = () => (
 	<>
-		<div classname="heading-container" style={forward}>
+		<div className="heading-container" style={forward}>
 			<h1 style={h1Header}>PING<span style={h1HeadingWrap}>PONG</span></h1>
 			<h2 style={h2Header}>pairs<span style={h2HeadingWrap}>generator</span></h2>
 		</div>
 		
 		{/* wrapped for the whole container */}
 		<div style = {back} >
-			<div className="d-flex justify-content-center">
+			<div className="d-flex justify-content-center" style={{height: "4vh"}}>
 				<div className="user_card">
 					{/* the logo  */}
 					<div className="brand_logo_container">
 						<img src={logo} className="brand_logo" alt="Logo"></img>
 					</div>
 				</div>
-					{/* the background */}
-					<div className="form_container">
-					</div>
 			</div>
 		</div>
 	</>
