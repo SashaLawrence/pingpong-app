@@ -29,12 +29,12 @@ const forward = {
 	zIndex: "10",
 	position: "relative",
 	textAlign: "left",
-	paddingLeft: "12px",
+	paddingLeft: "18px",
 	top: "30px"
 }
 const Header = () => (
 	<>
-		<div style={forward}>
+		<div classname="heading-container" style={forward}>
 			<h1 style={h1Header}>PING<span style={h1HeadingWrap}>PONG</span></h1>
 			<h2 style={h2Header}>pairs<span style={h2HeadingWrap}>generator</span></h2>
 		</div>

@@ -39,3 +39,10 @@ body, html {
 .container {
 	padding-top: 30px;
 }
+
+@media all and (max-width: 330px) {
+	h1, h2 { display: none; }
+	}
+@media all and (max-width: 330px) {
+	.container { padding-top: 130px; }
+	}
