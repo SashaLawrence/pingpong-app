@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/pingpong-app/static/css/main.2e8e8b0a.chunk.css",
-    "main.js": "/pingpong-app/static/js/main.080d8a27.chunk.js",
-    "main.js.map": "/pingpong-app/static/js/main.080d8a27.chunk.js.map",
+    "main.css": "/pingpong-app/static/css/main.bd1c5ba1.chunk.css",
+    "main.js": "/pingpong-app/static/js/main.6c705ad4.chunk.js",
+    "main.js.map": "/pingpong-app/static/js/main.6c705ad4.chunk.js.map",
     "runtime-main.js": "/pingpong-app/static/js/runtime-main.40b007d3.js",
     "runtime-main.js.map": "/pingpong-app/static/js/runtime-main.40b007d3.js.map",
     "static/js/2.83096f9d.chunk.js": "/pingpong-app/static/js/2.83096f9d.chunk.js",
     "static/js/2.83096f9d.chunk.js.map": "/pingpong-app/static/js/2.83096f9d.chunk.js.map",
     "index.html": "/pingpong-app/index.html",
-    "precache-manifest.8e70f945eeb44c7863e607a85221d5d6.js": "/pingpong-app/precache-manifest.8e70f945eeb44c7863e607a85221d5d6.js",
+    "precache-manifest.95eed0289afc8dcf66c54f761e3f45d8.js": "/pingpong-app/precache-manifest.95eed0289afc8dcf66c54f761e3f45d8.js",
     "service-worker.js": "/pingpong-app/service-worker.js",
-    "static/css/main.2e8e8b0a.chunk.css.map": "/pingpong-app/static/css/main.2e8e8b0a.chunk.css.map",
+    "static/css/main.bd1c5ba1.chunk.css.map": "/pingpong-app/static/css/main.bd1c5ba1.chunk.css.map",
     "static/media/logo.png": "/pingpong-app/static/media/logo.cb9686b2.png"
   }
 }
